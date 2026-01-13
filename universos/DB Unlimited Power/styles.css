@@ -1,0 +1,227 @@
+*:root {
+  --DBfont2: "Bangers", system-ui;
+}
+
+body {
+  background-image: url(./imagenes/papers.co-ao48-dragonball-full-art-illust-game-anime-41-iphone-wallpaper\ -\ copia.webp);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.DB_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: #a67f3c;
+  color: white;
+  position: relative;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  font-family: var(--DBfont2);
+  font-size: 25px;
+
+  width: 100px;
+  padding: 10px;
+
+  color: #aee4ff;
+  text-shadow: -2px -2px 0 #0d587e, 2px -2px 0 #0d587e, -2px 2px 0 #0d587e,
+    2px 2px 0 #0d587e;
+
+  outline: rgb(255, 255, 255) solid 2px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  background: #3e87a3;
+  background: linear-gradient(
+    180deg,
+    rgba(62, 135, 163, 1) 0%,
+    rgba(67, 139, 167, 1) 20%,
+    rgba(55, 110, 130, 1) 50%,
+    rgba(69, 145, 174, 1) 80%,
+    rgba(74, 156, 189, 1) 100%
+  );
+}
+
+.header_buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10px;
+}
+
+
+
+.DB_tittle {
+  width: 150px;
+}
+
+.DB_links {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-family: var(--DBfont2);
+  font-size: 20px;
+  font-weight: 900;
+  color: red;
+  padding: 10px;
+
+  text-shadow: -2px -2px 0 #dd8406, 2px -2px 0 #dd8406, -2px 2px 0 #dd8406,
+    2px 2px 0 #dd8406;
+}
+
+.nav_toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+}
+
+.nav_menu {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  width: 30%;
+  background: #e39f71;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.nav_menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  outline: red solid;
+}
+
+.menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_list a {
+  color: rgb(232, 220, 2);
+  text-decoration: none;
+}
+
+.universe-page {
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* ----- Portada tipo Dragon Ball ----- */
+.universe-banner {
+  background: radial-gradient(circle, #ffe27a, #ffb300, #ff8c00);
+  color: #000;
+  text-align: center;
+  padding: 25px 10px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: 3px solid #00000050;
+  box-shadow: 0 0 25px rgba(255, 170, 0, 0.6);
+}
+
+.universe-banner h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+
+.universe-banner .universe-title-desc {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* ----- Tarjeta Info General ----- */
+.uni-info-card {
+  background: #fff;
+  border: 3px solid #e4b200;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.uni-info-card h3 {
+  margin-bottom: 10px;
+}
+
+/* ----- Sección de características ----- */
+.uni-section {
+  background: #ffffffd9;
+  border: 3px solid #ffca28;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.hierarchy-card {
+  background: #fff;
+  border-left: 5px solid #ff9800;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(3, 0fr);
+  grid-template-rows: 1fr repeat(4, 0fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.isstory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 30px;
+  width: 100px;
+  padding: 10px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(62, 135, 163, 1) 0%,
+    rgba(67, 139, 167, 1) 20%,
+    rgba(55, 110, 130, 1) 50%,
+    rgba(69, 145, 174, 1) 80%,
+    rgba(74, 156, 189, 1) 100%
+  );
+
+  outline: rgb(255, 255, 255) solid 2px;
+
+  border-radius: 20px;
+
+  font-family: var(--DBfont2);
+  font-size: 25px;
+  text-decoration: none;
+  color: #aee4ff;
+  text-shadow: -2px -2px 0 #0d587e, 2px -2px 0 #0d587e, -2px 2px 0 #0d587e,
+    2px 2px 0 #0d587e;
+}
+

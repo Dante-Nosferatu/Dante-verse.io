@@ -1,0 +1,118 @@
+body {
+  background-image: url(../imagenes/ffonfdo.webp);
+  background-attachment: fixed;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Contenedor principal */
+
+/* Título principal */
+.historia-title {
+  display: flex;
+  width: 350px;
+  margin: 10px 5px 20px 5px;
+  color: yellow;
+
+  outline: rgb(255, 0, 0) 5px solid;
+  border-radius: 3px;
+  background-color: rgba(147, 86, 86, 0.567);
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  font-size: 25px;
+  margin: 20px 125px;
+
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: rgb(255, 0, 0) 5px solid;
+
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #7e0d0d, 2px -2px 0 #7e0d0d, -2px 2px 0 #7e0d0d,
+    2px 2px 0 #7e0d0d;
+    
+  background-color: rgba(83, 83, 83, 0.525);
+}
+
+
+.chapter-block {
+  background-color: rgba(83, 83, 83, 0.525);
+  outline: rgb(255, 0, 0) 5px solid;
+  padding: 0 15px;
+  margin: 0 20px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #7e0d0d, 2px -2px 0 #7e0d0d, -2px 2px 0 #7e0d0d,
+    2px 2px 0 #7e0d0d;
+}
+
+h3 {
+  margin: 5px;
+  font-size: 20px;
+}
+
+.text_cap {
+  text-align: justify;
+}
+
+/* Ocultos (almacenan el contenido real) */
+.hidden-cap {
+  display: none;
+}
+
+/* MODAL*/
+
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 320px;
+  max-width: 500px;
+  border-radius: 12px;
+  max-height: 90vh;
+  overflow-y: auto; /* scroll interno */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón cerrar */
+.close-btn {
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 10px;
+  background-color: rgb(178, 178, 178);
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Texto del modal */
+.modal-body h2 {
+  margin-top: 0;
+}

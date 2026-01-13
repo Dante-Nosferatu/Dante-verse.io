@@ -1,0 +1,218 @@
+*:root {
+  --Proto: "Special Elite", system-ui;
+}
+
+body {
+  background-image: url(./imagenes/fondo.webp);
+  background-attachment: fixed;
+  background-size: 200%;
+  background-position: center;
+  
+  
+}
+
+.header {
+  width: 100%;
+  background: #000000;
+  border: 2px solid #ff0000;
+  position: sticky;
+  top: 010px;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 0, 0);
+}
+
+/* ----- Parte superior ----- */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+
+  width: 100px;
+  padding: 15px;
+
+  color: #ff0000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+/* ----- Hamburguesa animada ----- */
+.hamburger {
+  width: 28px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #ff2f2f;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Estado activo */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ----- Menú móvil (más pequeño y debajo del icono) ----- */
+.mobile-menu {
+  display: none;
+  background: #000000;
+  border: 1px solid #ff0000;
+  animation: fadeIn 0.3s ease;
+  width: 30%;
+  position: fixed;
+  right: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu li a {
+  display: block;
+  padding: 12px 12px;
+  text-decoration: none;
+  color: #ff0000;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu li a:hover {
+  background: #e9e9e9;
+}
+
+/* ----- Main general ----- */
+.main-content {
+  padding: 15px;
+  font-family: var(--Proto);
+}
+
+/* ----- Header del multiverso ----- */
+.multiverse-header h1 {
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.multiverse-header p {
+  color: #fff7f7;
+  font-size: 0.95em;
+  margin-bottom: 20px;
+}
+
+.universe-page {
+  padding: 15px;
+}
+
+/* ----- Portada tipo Dragon Ball ----- */
+.universe-banner {
+  background: radial-gradient(circle, #be1313, #7e1a1a, #451313);
+  color: #000;
+  text-align: center;
+  padding: 25px 10px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: 3px solid #00000050;
+  box-shadow: 0 0 25px rgb(255, 0, 0);
+}
+
+.universe-banner h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+
+.universe-banner .universe-title-desc {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* ----- Tarjeta Info General ----- */
+.uni-info-card {
+  background: #160101;
+  border: 3px solid #ff0000e3;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+
+  color: #ff0000;
+}
+
+.uni-info-card ul li{
+  font-size: 20px;
+}
+
+
+.uni-info-card h3 {
+  margin-bottom: 10px;
+}
+
+/* ----- Sección de características ----- */
+.uni-section {
+  background: #000000d9;
+  border: 3px solid hsl(0, 100%, 50%);
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.isstory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 5px;
+  width: 100px;
+  padding: 10px;
+
+  outline: rgb(255, 0, 0) solid 2px;
+
+  
+  font-size: 25px;
+  text-decoration: none;
+  color: #ff0000;
+  background-color: black;
+}
