@@ -13,6 +13,9 @@ body {
   background: #7803038d;
   color: white;
   position: relative;
+
+  margin: 20px auto;
+  max-width: 360px;
 }
 
 .back {
@@ -89,7 +92,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  outline: red solid;
+  outline: rgb(255, 69, 69) solid;
 }
 
 .menu_list {
@@ -111,12 +114,21 @@ body {
   color: #423838;
   text-align: center;
   padding: 25px 10px;
-  margin: 20px 20px;
+  margin: 20px;
   border-radius: 14px;
   border: 3px solid #00000050;
   box-shadow: 0 0 25px rgba(255, 170, 0, 0.6);
 
   height: 180px;
+
+  margin: auto;
+  max-width: 360px;
+}
+
+.universe-page{
+  
+margin: auto;
+  max-width: 360px;
 }
 
 .universe-banner h2 {
@@ -126,8 +138,9 @@ body {
 }
 
 .universe-banner .universe-title-desc {
-  font-size: 1em;
+  font-size: 1.5em;
   margin-top: 5px;
+  color: white;
 }
 
 .uni-info-card {

@@ -10,6 +10,10 @@ body {
   background-repeat: no-repeat;
 
   font-style: var(--DBfont);
+
+  
+margin: auto;
+  max-width: 360px;
 }
 
 /* Contenedor principal */

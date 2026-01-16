@@ -16,6 +16,9 @@ body {
   background: #a67f3c;
   color: white;
   position: relative;
+
+  margin: auto;
+  max-width: 360px;
 }
 
 .back {
@@ -57,8 +60,6 @@ body {
   text-align: center;
   margin: 0 10px;
 }
-
-
 
 .DB_tittle {
   width: 150px;
@@ -126,6 +127,9 @@ body {
 .universe-page {
   padding: 15px;
   font-family: Arial, sans-serif;
+
+  margin: auto;
+  max-width: 360px;
 }
 
 /* ----- Portada tipo Dragon Ball ----- */
@@ -172,27 +176,22 @@ body {
   border-radius: 12px;
   padding: 15px;
   margin-bottom: 20px;
+  text-align: justify;
 }
-
-.hierarchy-card {
-  background: #fff;
-  border-left: 5px solid #ff9800;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) repeat(3, 0fr);
-  grid-template-rows: 1fr repeat(4, 0fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 550px;
+  margin: 0 auto;
 }
 
-.div1 {
-  grid-area: 1 / 1 / 2 / 3;
+.item {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  grid-column: span 2;
 }
 
 .isstory {
@@ -200,7 +199,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin: 20px 30px;
+  margin: auto;
   width: 100px;
   padding: 10px;
 
@@ -224,4 +223,3 @@ body {
   text-shadow: -2px -2px 0 #0d587e, 2px -2px 0 #0d587e, -2px 2px 0 #0d587e,
     2px 2px 0 #0d587e;
 }
-
